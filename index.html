@@ -19,8 +19,53 @@
     <header class="header">
 
     </header>
-    <main class="main">
-
+    <main class="max-w-[800px] w-full mx-auto px-20 py-14">
+        <section class="flex flex-col">
+            <header class="flex items-center justify-between gap-3">
+                <div>
+                    <h1 class="title text-content-primary">
+                        Sua agenda
+                    </h1>
+                    <p class="pMedium text-content-secondary">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+                </div>
+                <button class="w-44 flex items-center gap-2 rounded-[8px] p-3 border border-border-primary button text-content-secondary">
+                    <img src="src/Images/Calendar.svg" alt="Calendário">
+                    <p><!-- colocar dia da página por js -->10/01/2024</p>
+                    <img src="src/Images/Arrow.svg" alt="Abrir">
+                </button>
+            </header>
+            <div class="max-w-[720px] min-h-full my-8">
+                <section class="overflow-auto">
+                    <div class="rounded-[10px] bg-background-tertiary">
+                        <div class="flex justify-between items-center py-3 px-5 border-b border-border-primary">
+                            <figure class="flex items-center gap-3">
+                                <img class="w-5 h-5" src="src/Images/Morning.svg" alt="Manhã">
+                                <p class="lLarge text-content-primary"><!-- texto por js -->Manhã</p>
+                            </figure>
+                            <p class="lLarge text-content-secondary"><!-- texto por js -->09h-12h</p>
+                        </div>
+                        <div class="p-3">
+                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center gap-4 p-5">
+                                <div class="flex items-center gap-4">
+                                    <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->09h</p>
+                                    <p class="lSmall text-content-primary"><!--nome da pessoa-->Thor <span class="pSmall text-content-secondary">/Fernanda Costa</span></p>
+                                </div>
+                                <p class="pSmall text-content-secondary"><!--o que vai fazer-->Vacinação</p>
+                                <button class="pSmall text-content-secondary">Remover agendamento</button>
+                            </div>
+                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center gap-4 p-5 border-t border-border-primary">
+                                <div class="flex items-center gap-4">
+                                    <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->10h</p>
+                                    <p class="lSmall text-content-primary"><!--nome do cachorro e da pessoa-->Mel <span class="pSmall text-content-secondary">/João Souza</span></p>
+                                </div>
+                                <p class="pSmall text-content-secondary"><!--o que vai fazer-->Corte de Unhas</p>
+                                <button class="pSmall text-content-secondary">Remover agendamento</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
     <footer class="footer">
 
