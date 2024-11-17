@@ -17,6 +17,8 @@ module.exports = {
           tertiary: '#23242C',
           brand: '#9282FA',
           highlights: '#BDB4FA',
+          page: '#14151D',
+          logo: '#2E2C30'
         },
 
         border: {
@@ -40,6 +42,10 @@ module.exports = {
         interTight: ['Inter Tight', 'serif'],
         inter: ['Inter', 'sans-serif'],
       },
+
+      boxShadow: {
+        blur: '0 0 40px 0 rgba(146, 130, 250, 0.3)'
+      }
     },
   },
   plugins: [
