@@ -20,7 +20,8 @@
         <img src="src/Images/Logo.svg" alt="Logo do Mundo pet">
     </header>
     <main class="max-w-[800px] w-full mx-auto px-20 py-14">
-        <section class="flex flex-col">
+        <section class="flex items-center flex-col">
+            <!-- se colocar flex-wrap aqui o botão nunca fica em cima, procurar metodo, talvez flex-grow para o texto 2 e botão 1 funcione -->
             <header class="flex items-center justify-between gap-3">
                 <div>
                     <h1 class="title text-content-primary">
@@ -45,7 +46,8 @@
                             <p class="lLarge text-content-secondary"><!-- texto por js -->09h-12h</p>
                         </div>
                         <div class="p-3">
-                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center gap-4 p-5">
+                            <!-- bem provavel que deve ser necessário criar media querry para responsivar, sem ideias de responsivar -->
+                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center justify-items-center gap-4 p-5">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->09h</p>
                                     <p class="lSmall text-content-primary"><!--nome da pessoa-->Thor <span class="pSmall text-content-secondary">/Fernanda Costa</span></p>

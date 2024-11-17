@@ -676,6 +676,14 @@ video {
   width: 100%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.min-w-44 {
+  min-width: 11rem;
+}
+
 .max-w-\[720px\] {
   max-width: 720px;
 }
@@ -684,20 +692,96 @@ video {
   max-width: 800px;
 }
 
+.max-w-44 {
+  max-width: 11rem;
+}
+
+.flex-shrink-\[\] {
+  flex-shrink: ;
+}
+
+.flex-shrink-\[180px\] {
+  flex-shrink: 180px;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grid-cols-\[repeat\(3\2c _minmax\(100px\2c _200px\)\)\] {
   grid-template-columns: repeat(3, minmax(100px, 200px));
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(100px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(100px\2c _300px\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(100px\2c _\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(100px, ));
+}
+
+.grid-cols-\[repeat\(3\2c _minmax\(100px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fill\)\] {
+  grid-template-columns: repeat(auto-fill);
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _\)\] {
+  grid-template-columns: repeat(auto-fill, );
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _200px\)\] {
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(200px\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(200px));
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(200px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(150px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-2 {
