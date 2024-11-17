@@ -45,17 +45,17 @@ module.exports = {
   plugins: [
     function ({ addComponents, theme }) {
       addComponents({
-        '.interTight': {
+        '.title': {
           fontFamily: theme('fontFamily.interTight'),
-          fontSize: '1rem',
-          fontWeight: '600',
+          fontSize: '1.5rem',
+          fontWeight: '700',
           lineHeight: '2rem',
         },
 
         '.pSmall': {
           fontFamily: theme('fontFamily.inter'),
           fontSize: '0.75rem',
-          fontWeight: '500',
+          fontWeight: '400',
           lineHeight: '1rem',
         },
 
@@ -93,6 +93,13 @@ module.exports = {
           fontWeight: '500',
           lineHeight: '1.5rem',
         },
+
+        '.button': {
+          fontFamily: theme('fontFamily.inter'),
+          fontSize: '1rem',
+          fontWeight: '400',
+          lineHeight: '1.5rem',
+        }
       });
     },
   ],
