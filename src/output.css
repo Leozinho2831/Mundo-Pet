@@ -564,3 +564,53 @@ div {
   font-weight: 500;
   line-height: 1.5rem;
 }
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: 0.75rem;
+}
+
+.bg-background-page {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 21 29 / var(--tw-bg-opacity, 1));
+}
+
+.bg-background-logo {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 44 48 / var(--tw-bg-opacity, 1));
+}
+
+.p-5 {
+  padding: 1.25rem;
+}

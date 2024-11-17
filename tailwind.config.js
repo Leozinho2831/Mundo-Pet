@@ -17,6 +17,8 @@ module.exports = {
           tertiary: '#23242C',
           brand: '#9282FA',
           highlights: '#BDB4FA',
+          page: '#14151D',
+          logo: '#2E2C30'
         },
 
         border: {
