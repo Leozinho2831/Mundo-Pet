@@ -42,6 +42,10 @@ module.exports = {
         interTight: ['Inter Tight', 'serif'],
         inter: ['Inter', 'sans-serif'],
       },
+
+      boxShadow: {
+        blur: '0 0 40px 0 rgba(146, 130, 250, 0.3)'
+      }
     },
   },
   plugins: [

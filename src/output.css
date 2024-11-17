@@ -558,6 +558,13 @@ div {
   display: block;
 }
 
+.lLarge {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
 .link {
   font-family: Inter, sans-serif;
   font-size: 0.75rem;
@@ -573,37 +580,32 @@ div {
   position: relative;
 }
 
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.right-7 {
+  right: 1.75rem;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.w-2\/4 {
-  width: 50%;
+.h-screen {
+  height: 100vh;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.rounded-br {
-  border-bottom-right-radius: 0.25rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-br-xl {
   border-bottom-right-radius: 0.75rem;
-}
-
-.bg-background-page {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 21 29 / var(--tw-bg-opacity, 1));
 }
 
 .bg-background-logo {
@@ -611,6 +613,32 @@ div {
   background-color: rgb(46 44 48 / var(--tw-bg-opacity, 1));
 }
 
+.bg-background-page {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 21 29 / var(--tw-bg-opacity, 1));
+}
+
+.bg-content-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 130 250 / var(--tw-bg-opacity, 1));
+}
+
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.shadow-blur {
+  --tw-shadow: 0 0 40px 0 rgba(146, 130, 250, 0.3);
+  --tw-shadow-colored: 0 0 40px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
