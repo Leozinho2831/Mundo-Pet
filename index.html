@@ -16,20 +16,21 @@
     <title>Mundo Pet</title>
 </head>
 <body class="relative bg-background-page h-screen">
-    <header class="header absolute top-0 left-0 bg-background-logo p-5 rounded-br-xl">
-        <img src="src/Images/Logo.svg" alt="Logo do Mundo pet">
+    <header class="w-44 bg-background-logo p-5 rounded-br-xl">
+        <a href="index.html">
+            <img src="src/Images/Logo.svg" alt="Logo do Mundo pet">
+        </a>
     </header>
     <main class="max-w-[800px] w-full mx-auto px-20 py-14">
-        <section class="flex items-center flex-col">
-            <!-- se colocar flex-wrap aqui o botão nunca fica em cima, procurar metodo, talvez flex-grow para o texto 2 e botão 1 funcione -->
-            <header class="flex items-center justify-between gap-3">
-                <div>
+        <section>
+            <header class="flex flex-wrap items-center justify-between gap-3">
+                <div class="basis-44 flex-1">
                     <h1 class="title text-content-primary">
                         Sua agenda
                     </h1>
                     <p class="pMedium text-content-secondary">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
                 </div>
-                <button class="w-44 flex items-center gap-2 rounded-[8px] p-3 border border-border-primary button text-content-secondary">
+                <button class="w-44 basis-44 flex items-center gap-2 rounded-[8px] p-3 border border-border-primary button text-content-secondary">
                     <img src="src/Images/Calendar.svg" alt="Calendário">
                     <p><!-- colocar dia da página por js -->10/01/2024</p>
                     <img src="src/Images/Arrow.svg" alt="Abrir">
@@ -46,7 +47,6 @@
                             <p class="lLarge text-content-secondary"><!-- texto por js -->09h-12h</p>
                         </div>
                         <div class="p-3">
-                            <!-- bem provavel que deve ser necessário criar media querry para responsivar, sem ideias de responsivar -->
                             <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center justify-items-center gap-4 p-5">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->09h</p>
@@ -55,7 +55,7 @@
                                 <p class="pSmall text-content-secondary"><!--o que vai fazer-->Vacinação</p>
                                 <button class="pSmall text-content-secondary">Remover agendamento</button>
                             </div>
-                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center gap-4 p-5 border-t border-border-primary">
+                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center justify-items-center gap-4 p-5 border-t border-border-primary">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->10h</p>
                                     <p class="lSmall text-content-primary"><!--nome do cachorro e da pessoa-->Mel <span class="pSmall text-content-secondary">/João Souza</span></p>
