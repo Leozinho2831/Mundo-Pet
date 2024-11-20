@@ -47,21 +47,22 @@
                             <p class="lLarge text-content-secondary"><!-- texto por js -->09h-12h</p>
                         </div>
                         <div class="p-3">
-                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center justify-items-center gap-4 p-5">
+                            <div class="grid items-center justify-items-center gap-3 p-5 mobile:grid-cols-[repeat(2,_minmax(100px,_230px))] tablet:grid-cols-[repeat(3,_minmax(100px,_230px))]">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->09h</p>
                                     <p class="lSmall text-content-primary"><!--nome da pessoa-->Thor <span class="pSmall text-content-secondary">/Fernanda Costa</span></p>
                                 </div>
                                 <p class="pSmall text-content-secondary"><!--o que vai fazer-->Vacinação</p>
-                                <button class="pSmall text-content-secondary">Remover agendamento</button>
+                                <button class="pSmall text-content-secondary mobile:col-start-1 mobile:col-end-3 tablet:col-start-3 tablet:col-end-4">Remover agendamento</button>
                             </div>
-                            <div class="grid grid-cols-[repeat(3,_minmax(100px,_200px))] items-center justify-items-center gap-4 p-5 border-t border-border-primary">
+                            <!-- está desalinhado com o primeiro, preciso de uma solução caso achar feio -->
+                            <div class="grid items-center justify-items-center gap-3 p-5 border-t border-border-primary mobile:grid-cols-[repeat(2,_minmax(100px,_230px))] tablet:grid-cols-[repeat(3,_minmax(100px,_230px))]">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->10h</p>
                                     <p class="lSmall text-content-primary"><!--nome do cachorro e da pessoa-->Mel <span class="pSmall text-content-secondary">/João Souza</span></p>
                                 </div>
                                 <p class="pSmall text-content-secondary"><!--o que vai fazer-->Corte de Unhas</p>
-                                <button class="pSmall text-content-secondary">Remover agendamento</button>
+                                <button class="pSmall text-content-secondary mobile:col-start-1 mobile:col-end-3 tablet:col-start-3 tablet:col-end-4">Remover agendamento</button>
                             </div>
                         </div>
                     </div>
