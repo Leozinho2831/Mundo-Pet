@@ -856,6 +856,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -903,6 +907,10 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
 .text-content-primary {
