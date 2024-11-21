@@ -8,6 +8,7 @@ const today = dayjs().format('YYYY-MM-DD');
 
 inputDate.min = today;
 
+// formatando input tel
 const telInput = document.querySelector('input[type="tel"]');
 
 function formatInputTel(){
@@ -36,3 +37,16 @@ function formatInputTel(){
 }
 
 telInput.addEventListener('input', formatInputTel);
+
+// formatando input de data e hora
+const dateInput = document.querySelector('.js-inputDate');
+
+function formatInputDate(){
+
+}
+
+const hourInput = document.querySelector('.js-inputHour');
+
+function formatInputHour(){
+
+}
