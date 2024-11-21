@@ -50,7 +50,7 @@
                             <div class="grid items-center justify-items-center gap-3 p-5 mobile:grid-cols-[repeat(2,_minmax(100px,_230px))] tablet:grid-cols-[repeat(3,_minmax(100px,_230px))]">
                                 <div class="flex items-center gap-4">
                                     <p class="lMedium text-content-primary"><!-- horas do começo do atendimento, por js -->09h</p>
-                                    <p class="lSmall text-content-primary"><!--nome da pessoa-->Thor <span class="pSmall text-content-secondary">/Fernanda Costa</span></p>
+                                    <p class="lSmall text-content-primary mobile:text-ellipsis mobile:line-clamp-2"><!--nome da pessoa-->Thor <span class="pSmall text-content-secondary">/Fernanda Costa</span></p>
                                 </div>
                                 <p class="pSmall text-content-secondary"><!--o que vai fazer-->Vacinação</p>
                                 <button class="pSmall text-content-secondary mobile:col-start-1 mobile:col-end-3 tablet:col-start-3 tablet:col-end-4">Remover agendamento</button>
@@ -69,31 +69,63 @@
                 </section>
             </div>
         </section>
-        <form action="#" method="#" class="min-w-[300px] max-w-[800px] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white">
-            <h1>Agende um atendimento</h1>
-            <p>Preencha os dados do cliente para realizar o agendamento:</p>
-
-            <label class="block" for="name_tutor">Nome do tutor</label>
-            <input type="text" id="name_tutor" name="name_tutor" required>
-
-            <label class="block" for="name_pet">Nome do pet</label>
-            <input type="text" id="name_pet" name="name_pet" required>
-
-            <label class="block" for="phone">Telefone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" 
-            pattern="\d{2}\d{5}\d{4}" required>
-
-            <label class="block" for="description">Descrição do serviço</label>
-            <textarea id="description" name="description" placeholder="Banho e tosa" required></textarea>
-            
+        <form action="#" method="#" class="min-w-[300px] max-w-[800px] w-[500px] p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background-tertiary grid gap-7">
             <div>
-                <label class="block" for="date">Data</label>
-                <input type="date" id="date" name="date" required>
-                <label class="block" for="hour">Hora</label>
-                <!-- quando clicar nesse input poderia abrir uma notificação falando que é das 9 as 9 da noite -->
-                <input type="time" id="hour" name="hour" min="09:00" max="21:00" required>
+                <h1>Agende um atendimento</h1>
+                <p>Preencha os dados do cliente para realizar o agendamento:</p>
             </div>
-            <input type="submit" value="Agendar">
+
+            <div class="grid gap-4">
+                <div>
+                    <label class="block" for="name_tutor">Nome do tutor</label>
+                    <div class="relative">
+                        <input type="text" class="border rounded-xl py-3 pl-10 w-full" id="name_tutor" name="name_tutor" placeholder="Helena Souza" required>
+                        <img src="src/Images/User.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+                    </div>
+                </div>
+    
+                <div>
+                    <label class="block" for="name_pet">Nome do pet</label>
+                    <div class="relative">
+                        <input type="text" class="border rounded-xl py-3 pl-10 w-full" id="name_pet" name="name_pet" placeholder="Cheddar" required>
+                        <img src="src/Images/Pet.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+                    </div>
+                </div>
+    
+                <div>
+                    <label class="block" for="phone">Telefone</label>
+                    <div class="relative">
+                        <input type="tel" class="border rounded-xl py-3 pl-10 w-full" id="phone" name="phone" placeholder="(00) 0 0000-0000" pattern="\d{2}\d{5}\d{4}" required>
+                        <img src="src/Images/Phone.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+                    </div>
+                </div>
+    
+                <div>
+                    <label class="block" for="description">Descrição do serviço</label>
+                    <textarea class="resize-none border rounded-xl py-3 pl-4 h-20 w-full" id="description" name="description" placeholder="Banho e tosa" required></textarea>
+                </div>
+                
+                <div class="flex justify-between w-full gap-4">
+                    <div class="w-6/12">
+                        <label class="block" for="date">Data</label>
+                        <div class="relative">
+                            <input class="border rounded-xl py-3 pl-10 w-full" type="text" id="date" name="date" placeholder="DD/MM/AAAA" required>
+                            <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+                        </div>
+                    </div>
+                    
+                    <div class="w-6/12">
+                        <label class="block" for="hour">Hora</label>
+                        <!-- quando clicar nesse input poderia abrir uma notificação falando que é das 9 as 9 da noite -->
+                         <div class="relative">
+                            <input class="border rounded-xl py-3 pl-10 w-full" type="text" id="hour" name="hour" placeholder="12:00" required>
+                            <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+                         </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <input type="submit" class="w-1/4 py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
         </form>
     </main>
     <footer class="flex flex-col justify-center items-center p-5 bg-background-tertiary mobile:absolute mobile:bottom-7 mobile:right-7 mobile:bg-none mobile:p-0">
