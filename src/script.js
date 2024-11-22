@@ -79,3 +79,16 @@ function formatInputHour(){
 }
 
 hourInput.addEventListener('input', formatInputHour);
+
+// verificar se o input date ta com uma data do dia atual ou acima
+const form = document.querySelector('.js-form');
+
+function verifyDate(){
+    // pegando data atual
+    const today = dayjs();
+}
+
+form.addEventListener('submit', (event)=> {
+    event.preventDefault();
+    verifyDate();
+});
