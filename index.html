@@ -16,11 +16,13 @@
     <title>Mundo Pet</title>
 </head>
 <body class="relative bg-background-page">
+    
     <header class="w-44 bg-background-logo p-5 rounded-br-xl">
         <a href="index.html">
             <img src="src/Images/Logo.svg" alt="Logo do Mundo pet">
         </a>
     </header>
+
     <main class="max-w-[800px] w-full mx-auto px-10 py-8 mobile:min-h-[90vh] mobile:px-20 mobile:py-14">
         <section>
             <header class="flex flex-wrap items-center justify-between gap-3">
@@ -69,6 +71,8 @@
                 </section>
             </div>
         </section>
+
+        <!-- falta corrigir o form ta colado demais com o topo da tela -->
         <form action="#" method="#" class="min-w-[300px] max-w-[500px] w-full p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background-tertiary grid gap-7 rounded-lg">
             <header>
                 <h1 class="title text-content-primary">Agende um atendimento</h1>
@@ -79,7 +83,7 @@
                 <div>
                     <label class="block lMedium text-content-primary pb-1" for="name_tutor">Nome do tutor</label>
                     <div class="relative">
-                        <input type="text" class="border rounded-xl py-3 pl-10 w-full bg-transparent" id="name_tutor" name="name_tutor" placeholder="Helena Souza" required>
+                        <input class="button border border-border-primary rounded-xl py-3 pl-10 w-full bg-transparent" type="text" id="name_tutor" name="name_tutor" placeholder="Helena Souza" required>
                         <img src="src/Images/User.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                     </div>
                 </div>
@@ -87,7 +91,7 @@
                 <div>
                     <label class="block lMedium text-content-primary pb-1" for="name_pet">Nome do pet</label>
                     <div class="relative">
-                        <input type="text" class="border rounded-xl py-3 pl-10 w-full bg-transparent" id="name_pet" name="name_pet" placeholder="Cheddar" required>
+                        <input class="button border border-border-primary rounded-xl py-3 pl-10 w-full bg-transparent" type="text" id="name_pet" name="name_pet" placeholder="Cheddar" required>
                         <img src="src/Images/Pet.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                     </div>
                 </div>
@@ -95,21 +99,21 @@
                 <div>
                     <label class="block lMedium text-content-primary pb-1" for="phone">Telefone</label>
                     <div class="relative">
-                        <input type="tel" class="border rounded-xl py-3 pl-10 w-full bg-transparent" id="phone" name="phone" placeholder="(00) 0 0000-0000" pattern="\d{2}\d{5}\d{4}" required>
+                        <input class="button border border-border-primary rounded-xl py-3 pl-10 w-full bg-transparent" type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" pattern="\d{2}\d{5}\d{4}" required>
                         <img src="src/Images/Phone.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                     </div>
                 </div>
     
                 <div>
-                    <label class="block lMedium text-content-primary pb-1" for="description">Descrição do serviço</label>
-                    <textarea class="resize-none border rounded-xl py-3 pl-4 h-20 w-full bg-transparent" id="description" name="description" placeholder="Banho e tosa" required></textarea>
+                    <label class="lMedium block text-content-primary pb-1" for="description">Descrição do serviço</label>
+                    <textarea class="button resize-none border border-border-primary rounded-xl py-3 pl-4 h-20 w-full bg-transparent" id="description" name="description" placeholder="Banho e tosa" required></textarea>
                 </div>
                 
                 <div class="flex flex-wrap justify-between w-full gap-4">
                     <div class="basis-40 flex-1">
                         <label class="block lMedium text-content-primary pb-1" for="date">Data</label>
                         <div class="relative">
-                            <input class="border rounded-xl py-3 pl-10 w-full bg-transparent js-inputDate" type="text" id="date" name="date" placeholder="DD/MM/AAAA" required>
+                            <input class="button border border-border-primary rounded-xl py-3 pl-10 w-full bg-transparent js-inputDate" type="text" id="date" name="date" placeholder="dd/mm/aaaa" required>
                             <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                         </div>
                     </div>
@@ -118,7 +122,7 @@
                         <label class="block lMedium text-content-primary pb-1" for="hour">Hora</label>
                         <!-- quando clicar nesse input poderia abrir uma notificação falando que é das 9 as 9 da noite -->
                          <div class="relative">
-                            <input class="border rounded-xl py-3 pl-10 w-full bg-transparent js-inputHour" type="text" id="hour" name="hour" placeholder="12:00" required>
+                            <input class="button border border-border-primary rounded-xl py-3 pl-10 w-full bg-transparent js-inputHour" type="text" id="hour" name="hour" placeholder="12:00" required>
                             <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                          </div>
                     </div>
@@ -127,7 +131,9 @@
             </section>
             <input type="submit" class="lLarge py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
         </form>
+
     </main>
+
     <footer class="flex flex-col justify-center items-center p-5 bg-background-tertiary mobile:absolute mobile:bottom-7 mobile:right-7 mobile:bg-none mobile:p-0">
         <button class="lLarge bg-content-brand py-3 px-6 rounded-lg shadow-blur">Novo agendamento</button>
     </footer>

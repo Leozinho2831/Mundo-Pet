@@ -664,20 +664,12 @@ video {
   min-height: 100%;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .w-44 {
   width: 11rem;
 }
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-6\/12 {
-  width: 50%;
 }
 
 .w-full {
@@ -704,12 +696,12 @@ video {
   flex: 1 1 0%;
 }
 
-.basis-44 {
-  flex-basis: 11rem;
-}
-
 .basis-40 {
   flex-basis: 10rem;
+}
+
+.basis-44 {
+  flex-basis: 11rem;
 }
 
 .-translate-x-1\/2 {
