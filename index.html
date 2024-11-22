@@ -69,13 +69,13 @@
                 </section>
             </div>
         </section>
-        <form action="#" method="#" class="min-w-[300px] max-w-[800px] w-[500px] p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background-tertiary grid gap-7 rounded-lg">
-            <div>
+        <form action="#" method="#" class="min-w-[300px] max-w-[500px] w-full p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background-tertiary grid gap-7 rounded-lg">
+            <header>
                 <h1 class="title text-content-primary">Agende um atendimento</h1>
                 <p class="pMedium text-content-secondary">Preencha os dados do cliente para realizar o agendamento:</p>
-            </div>
+            </header>
 
-            <div class="grid gap-4">
+            <section class="grid gap-4">
                 <div>
                     <label class="block lMedium text-content-primary pb-1" for="name_tutor">Nome do tutor</label>
                     <div class="relative">
@@ -105,8 +105,8 @@
                     <textarea class="resize-none border rounded-xl py-3 pl-4 h-20 w-full bg-transparent" id="description" name="description" placeholder="Banho e tosa" required></textarea>
                 </div>
                 
-                <div class="flex justify-between w-full gap-4">
-                    <div class="w-6/12">
+                <div class="flex flex-wrap justify-between w-full gap-4">
+                    <div class="basis-40 flex-1">
                         <label class="block lMedium text-content-primary pb-1" for="date">Data</label>
                         <div class="relative">
                             <input class="border rounded-xl py-3 pl-10 w-full bg-transparent js-inputDate" type="text" id="date" name="date" placeholder="DD/MM/AAAA" required>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     
-                    <div class="w-6/12">
+                    <div class="basis-40 flex-1">
                         <label class="block lMedium text-content-primary pb-1" for="hour">Hora</label>
                         <!-- quando clicar nesse input poderia abrir uma notificação falando que é das 9 as 9 da noite -->
                          <div class="relative">
@@ -124,8 +124,8 @@
                     </div>
                     
                 </div>
-            </div>
-            <input type="submit" class="w-1/4 py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
+            </section>
+            <input type="submit" class="lLarge py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
         </form>
     </main>
     <footer class="flex flex-col justify-center items-center p-5 bg-background-tertiary mobile:absolute mobile:bottom-7 mobile:right-7 mobile:bg-none mobile:p-0">
