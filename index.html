@@ -113,6 +113,7 @@
                     <div class="basis-40 flex-1">
                         <label class="block lMedium text-content-primary pb-1" for="date">Data</label>
                         <div class="relative">
+                            <p class="hidden absolute lSmall top-14 text-red-600 js-textAlertDate">Coloque a data de hoje ou uma data futura!</p>
                             <input class="button border border-border-primary text-content-secondary rounded-xl py-3 pl-10 w-full bg-transparent js-inputDate" type="text" id="date" name="date" placeholder="dd/mm/aaaa" required>
                             <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                         </div>
@@ -122,6 +123,7 @@
                         <label class="block lMedium text-content-primary pb-1" for="hour">Hora</label>
                         <!-- quando clicar nesse input poderia abrir uma notificação falando que é das 9 as 9 da noite -->
                          <div class="relative">
+                            <p class="hidden absolute lSmall top-14 text-red-600 js-textAlertHour">Coloque a hora de agora ou um horário futuro</p>
                             <input class="button border border-border-primary text-content-secondary rounded-xl py-3 pl-10 w-full bg-transparent js-inputHour" type="text" id="hour" name="hour" placeholder="12:00" required>
                             <img src="src/Images/Clock.svg" class="absolute top-1/2 left-3 transform -translate-y-1/2">
                          </div>
@@ -129,7 +131,7 @@
                     
                 </div>
             </section>
-            <input type="submit" class="lLarge py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
+            <input type="submit" class="lLarge mt-3 py-3 px-6 justify-self-end bg-content-brand rounded-lg" value="Agendar">
         </form>
 
     </main>
