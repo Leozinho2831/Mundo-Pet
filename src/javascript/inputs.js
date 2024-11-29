@@ -1,5 +1,7 @@
 // deixando data formato brasileiro
 dayjs.locale('pt-br');
+// usando plugin de formato
+dayjs.extend(dayjs_plugin_customParseFormat);
 
 // formatando input tel
 const telInput = document.querySelector('input[type="tel"]');
@@ -82,13 +84,61 @@ hourInput.addEventListener('input', formatInputHour);
 
 // verificar se o input date ta com uma data do dia atual ou acima
 const form = document.querySelector('.js-form');
+const alertDate = document.querySelector('.js-textAlertDate');
+const alertHour = document.querySelector('.js-textAlertHour');
 
-function verifyDate(){
-    // pegando data atual
-    const today = dayjs();
+const classDisplayNone = 'hidden';
+
+function verifyTime(){
+    // input do dias
+    const today = dayjs().startOf('day');
+    const dayInput = dayjs(dateInput.value, 'DD/MM/YYYY').startOf('day');
+
+    if(dayInput.diff(today) >= 0){
+
+        console.log('foi');
+        
+    } else {
+        console.log(dayInput.diff(today));
+        
+        alertDate.classList.remove(classDisplayNone);
+    }
+
+    // input das horas
+    const [hoursInput, minutesInput] = hourInput.value.split(':');
+    const inputTime = dayjs().hour(hoursInput).minute(minutesInput);
+    
+    if(inputTime.diff(dayjs(), 'hour') >= 0 && inputTime.diff(dayjs(), 'minute') >= 0){
+        console.log(inputTime.diff(dayjs(), 'hour'));
+        console.log(inputTime.diff(dayjs(), 'minute'));
+        
+    } else {
+        console.log(alertHour);
+        alertHour.classList.remove(classDisplayNone);
+    }
 }
 
 form.addEventListener('submit', (event)=> {
     event.preventDefault();
-    verifyDate();
+    verifyTime();
 });
+
+form.addEventListener('keydown', (event) => {
+    if(event.key === 'Enter'){
+        event.preventDefault();
+        verifyTime();
+    }
+});
+
+// caso o texto de alerta estiver ativo, ele irá desativar toda vez que clicar no input
+dateInput.onclick = () => {
+    if(!alertDate.classList.contains(classDisplayNone)){
+        alertDate.classList.add(classDisplayNone);
+    }
+}
+
+hourInput.onclick = () => {
+    if(!alertHour.classList.contains(classDisplayNone)){
+        alertHour.classList.add(classDisplayNone);
+    }
+}
