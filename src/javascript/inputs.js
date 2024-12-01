@@ -69,6 +69,23 @@ function formatInputHour(){
     const hourArray = hourInput.value.split('');
     let hourFormatted = '';
 
+    // não permitir que usuário coloque algo que não exista como horário
+    const validValues = [
+        ['0', '1', '2'],
+        [], // no indice 1 do hourArray não haverá nenhuma verificação
+        ['0', '1', '2', '3', '4', '5'],
+    ];
+
+    for (let i = 0; i < hourArray.length; i++) {
+        // includes verifica se no array tem esses valores
+        if(i === 0 && !validValues[i].includes(hourArray[i])){
+            hourArray[i] = '';
+        } else if(i === 2 && !validValues[i].includes(hourArray[i])){
+            hourArray[i] = '';
+            break;
+        }
+    }
+
     if(hourArray.length > 0){
         hourFormatted += `${hourArray.slice(0,2).join('')}`;
     }
