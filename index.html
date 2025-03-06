@@ -15,6 +15,7 @@
     </header>
 
     <main class="py-[69px] tablet:pb-[100px] px-5 tablet:w-4/6 tablet:max-w-[800px]">
+        <!-- colocar blur-sm nas duas section para ficar com blur quando abrir o formulário -->
         <section class="flex flex-col gap-3 pb-[32px] tablet:flex-row tablet:items-center">
             <div class="w-full">
                 <h1 class="title text-content-primary">Sua agenda</h1>
@@ -50,7 +51,6 @@
                     <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
                 </div>
             </div>
-
 
             <div class="bg-background-tertiary rounded-[10px]">
                 <div class="flex justify-between p-4">
@@ -102,7 +102,6 @@
                 </div>
             </div>
 
-
             <div class="bg-background-tertiary rounded-[10px]">
                 <div class="flex justify-between p-4">
                     <div class="flex gap-3">
@@ -127,44 +126,56 @@
                 </div>
             </div>
         </section>
-        <form action="#" id="form" novalidate class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[480px]">
+
+        <form action="#" id="form" novalidate class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[480px] grid gap-7 bg-background-tertiary p-10 rounded-xl">
+
             <header>
-                <h1>Agende um atendimento</h1>
-                <p>Preencha os dados do cliente para realizar o agendamento:</p>
+                <h1 class="title text-content-primary">Agende um atendimento</h1>
+                <p class="pMedium text-content-secondary">Preencha os dados do cliente para realizar o agendamento:</p>
             </header>
-            <div>
-                <label for="nameUser">Nome do tutor</label>
-                <input type="text" id="nameUser" placeholder="Helena Souza" class="input">
-                <img src="src/image/User.svg" alt="User">
-            </div>
-            <div>
-                <label for="namePet">Nome do pet</label>
-                <input type="text" id="namePet" placeholder="Cheddar" class="input">
-                <img src="src/image/Pet.svg" alt="Pata">
-            </div>
-            <div>
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" placeholder="(00) 0 0000-0000" class="input">
-                <img src="src/image/Phone.svg" alt="Telefone">
-            </div>
-            <div>
-                <label for="description">Descrição do serviço</label>
-                <textarea rows="4" name="description" id="description" placeholder="Banho e tosa" class="input resize-none"></textarea>
-            </div>
-            <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
-                <img src="src/image/Calendar.svg"> 
-                <input type="date" name="date" id="date" required class="cursor-text bg-transparent text-content-secondary">
-            </div>
-            <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
-                <img src="src/image/Clock.svg">
-                <input type="time" name="hour" id="hour" required class="flex-1 cursor-text bg-transparent text-content-secondary">
-            </div>
-            <button class="button">Agendar</button>
+
+            <section class="space-y-4">
+                <div class="relative">
+                    <label for="nameUser" class="lMedium text-content-primary mb-1">Nome do tutor</label>
+                    <input type="text" id="nameUser" placeholder="Helena Souza" class="input pl-10">
+                    <img class="absolute top-1/2 left-3" src="src/image/User.svg" alt="User">
+                </div>
+
+                <div class="relative">
+                    <label for="namePet" class="lMedium text-content-primary mb-1">Nome do pet</label>
+                    <input type="text" id="namePet" placeholder="Cheddar" class="input pl-10">
+                    <img class="absolute top-1/2 left-3" src="src/image/Pet.svg" alt="Pata">
+                </div>
+
+                <div class="relative">
+                    <label for="phone" class="lMedium text-content-primary mb-1">Telefone</label>
+                    <input type="tel" id="phone" placeholder="(00) 0 0000-0000" class="input pl-10">
+                    <img class="absolute top-1/2 left-3" src="src/image/Phone.svg" alt="Telefone">
+                </div>
+
+                <div class="relative">
+                    <label for="description" class="lMedium text-content-primary mb-1">Descrição do serviço</label>
+                    <textarea rows="4" name="description" id="description" placeholder="Banho e tosa" class="input resize-none"></textarea>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <div class="min-w-32 flex gap-3 p-3 w-full border border-border-primary rounded-lg">
+                        <img src="src/image/Calendar.svg"> 
+                        <input type="date" name="date" id="date" required class="flex-1 w-1/2 cursor-text bg-transparent text-content-secondary">
+                    </div>
+                    <div class="min-w-32 flex flex-wrap gap-3 p-3 w-full border border-border-primary rounded-lg">
+                        <img src="src/image/Clock.svg">
+                        <input type="time" name="hour" id="hour" required class="flex-1 w-1/2 cursor-text bg-transparent text-content-secondary">
+                    </div>
+                </div>
+            </section>
+
+            <button class="button justify-self-end">Agendar</button>
         </form>
     </main>
 
     <footer class="justify-self-end py-5 bg-background-rodape text-center tablet:bg-transparent tablet:absolute tablet:bottom-0 tablet:right-0">
-        <button class="w-[218px] bg-content-brand lLarge text-[#050505] py-3 rounded-xl novoAgendamento">NOVO AGENDAMENTO</button>
+        <button class="button novoAgendamento">NOVO AGENDAMENTO</button>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
