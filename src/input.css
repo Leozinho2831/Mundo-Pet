@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components{
+    input{
+        @apply outline-none;
+    }
+
     .title{
         @apply font-serif font-bold text-2xl;
     }
@@ -33,5 +37,10 @@
 
     .button{
         @apply font-sans font-normal text-[1rem] leading-6;
+    }
+
+    ::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        background: url("image/Arrow.svg") no-repeat;
     }
 }
