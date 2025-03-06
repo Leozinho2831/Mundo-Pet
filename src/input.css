@@ -32,7 +32,10 @@
     }
 
     .link{
-        @apply font-sans font-medium text-xs leading-6;
+        @apply font-sans font-medium text-xs leading-6
+        text-content-tertiary 
+        hover:underline hover:underline-offset-1 hover:text-content-primary
+        transition cursor-pointer;
     }
 
     .button{
