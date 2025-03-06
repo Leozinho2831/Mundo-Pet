@@ -554,6 +554,11 @@ video {
   display: none;
 }
 
+input {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .title {
   font-family: Inter Tight, serif;
   font-size: 1.5rem;
@@ -575,6 +580,13 @@ video {
   line-height: 1.5rem;
 }
 
+.button {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
   background: url("image/Arrow.svg") no-repeat;
@@ -588,12 +600,24 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .flex {
@@ -606,6 +630,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-col {
