@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="src/styles.css">
     <title>Mundo Pet</title>
 </head>
-<body class="relative min-w-screen w-full bg-background-page">
+<body class="relative min-w-screen w-full bg-background-page flex flex-col">
     <header class="absolute top-0 left-0 bg-background-logo py-3 px-5 rounded-ee-xl">
         <img src="src/image/Logo.svg" alt="Logo da Mundo Pet">
     </header>
 
     <main class="py-[69px] px-5">
-        <section class="flex flex-col gap-3">
+        <section class="flex flex-col gap-3 pb-[32px]">
             <div>
                 <h1 class="title text-content-primary">Sua agenda</h1>
                 <p class="pMedium text-content-paragraph">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
@@ -21,6 +21,108 @@
             <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
                 <img src="src/image/Calendar.svg">
                 <input type="date" class="bg-transparent text-content-secondary" required>
+            </div>
+        </section>
+
+        <section class="space-y-3">
+            <div class="bg-background-tertiary rounded-[10px]">
+                <div class="flex justify-between p-4">
+                    <div class="flex gap-3">
+                        <img src="src/image/Morning.svg">
+                        <p class="lLarge text-content-primary">Manhã</p>
+                    </div>
+
+                    <p class="lLarge text-content-secondary">09h-12h</p>
+                </div>
+
+                <hr class="border-background-logo">
+
+                <div class="flex flex-col px-5 py-[32px]">
+                    <div class="flex gap-3">
+                        <p class="lMedium text-content-primary">09:00</p>
+                        <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
+                    </div>
+
+                    <p class="pMedium text-content-secondary">Vacinação</p>
+
+                    <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
+                </div>
+            </div>
+
+
+            <div class="bg-background-tertiary rounded-[10px]">
+                <div class="flex justify-between p-4">
+                    <div class="flex gap-3">
+                        <img src="src/image/Afternoon.svg">
+                        <p class="lLarge text-content-primary">Tarde</p>
+                    </div>
+
+                    <p class="lLarge text-content-secondary">13h-18h</p>
+                </div>
+
+                <hr class="border-background-logo">
+
+                <div class="flex flex-col px-5 py-[32px]">
+                    <div class="flex gap-3">
+                        <p class="lMedium text-content-primary">09:00</p>
+                        <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
+                    </div>
+
+                    <p class="pMedium text-content-secondary">Vacinação</p>
+
+                    <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
+                </div>
+
+                <hr class="border-background-logo">
+
+                <div class="flex flex-col px-5 py-[32px]">
+                    <div class="flex gap-3">
+                        <p class="lMedium text-content-primary">09:00</p>
+                        <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
+                    </div>
+
+                    <p class="pMedium text-content-secondary">Vacinação</p>
+
+                    <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
+                </div>
+
+                <hr class="border-background-logo">
+
+                <div class="flex flex-col px-5 py-[32px]">
+                    <div class="flex gap-3">
+                        <p class="lMedium text-content-primary">09:00</p>
+                        <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
+                    </div>
+
+                    <p class="pMedium text-content-secondary">Vacinação</p>
+
+                    <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
+                </div>
+            </div>
+
+
+            <div class="bg-background-tertiary rounded-[10px]">
+                <div class="flex justify-between p-4">
+                    <div class="flex gap-3">
+                        <img src="src/image/Night.svg">
+                        <p class="lLarge text-content-primary">Noite</p>
+                    </div>
+
+                    <p class="lLarge text-content-secondary">19h-21h</p>
+                </div>
+
+                <hr class="border-background-logo">
+
+                <div class="flex flex-col px-5 py-[32px]">
+                    <div class="flex gap-3">
+                        <p class="lMedium text-content-primary">09:00</p>
+                        <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
+                    </div>
+
+                    <p class="pMedium text-content-secondary">Vacinação</p>
+
+                    <p class="pt-4 self-end pSmall text-content-tertiary cursor-pointer">Remover agendamento</p>
+                </div>
             </div>
         </section>
     </main>
