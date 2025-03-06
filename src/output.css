@@ -675,6 +675,10 @@ input {
   background: url("image/Arrow.svg") no-repeat;
 }
 
+.novoAgendamento {
+  box-shadow: 0 0 20px 0 #9282FA;
+}
+
 .absolute {
   position: absolute;
 }
@@ -711,8 +715,16 @@ input {
   width: 190px;
 }
 
+.w-\[218px\] {
+  width: 218px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.min-w-\[190px\] {
+  min-width: 190px;
 }
 
 .max-w-\[480px\] {
@@ -771,12 +783,20 @@ input {
   align-self: flex-end;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.justify-self-end {
+  justify-self: end;
 }
 
 .rounded-\[10px\] {
   border-radius: 10px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-ee-xl {
@@ -787,14 +807,14 @@ input {
   border-width: 1px;
 }
 
-.border-border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(62 60 65 / var(--tw-border-opacity, 1));
-}
-
 .border-background-logo {
   --tw-border-opacity: 1;
   border-color: rgb(46 44 48 / var(--tw-border-opacity, 1));
+}
+
+.border-border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(62 60 65 / var(--tw-border-opacity, 1));
 }
 
 .bg-background-logo {
@@ -807,13 +827,23 @@ input {
   background-color: rgb(20 21 29 / var(--tw-bg-opacity, 1));
 }
 
-.bg-transparent {
-  background-color: transparent;
+.bg-background-rodape {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 36 44 / var(--tw-bg-opacity, 1));
 }
 
 .bg-background-tertiary {
   --tw-bg-opacity: 1;
   background-color: rgb(35 36 44 / var(--tw-bg-opacity, 1));
+}
+
+.bg-content-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 130 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-3 {
@@ -834,14 +864,19 @@ input {
   padding-bottom: 0.75rem;
 }
 
-.py-\[69px\] {
-  padding-top: 69px;
-  padding-bottom: 69px;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-\[32px\] {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.py-\[69px\] {
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .pb-\[32px\] {
@@ -850,6 +885,15 @@ input {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[\#050505\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 5 5 / var(--tw-text-opacity, 1));
 }
 
 .text-content-paragraph {
@@ -870,4 +914,46 @@ input {
 .text-content-tertiary {
   --tw-text-opacity: 1;
   color: rgb(102 102 102 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .tablet\:absolute {
+    position: absolute;
+  }
+
+  .tablet\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .tablet\:right-0 {
+    right: 0px;
+  }
+
+  .tablet\:h-\[48px\] {
+    height: 48px;
+  }
+
+  .tablet\:w-4\/6 {
+    width: 66.666667%;
+  }
+
+  .tablet\:max-w-\[800px\] {
+    max-width: 800px;
+  }
+
+  .tablet\:flex-row {
+    flex-direction: row;
+  }
+
+  .tablet\:items-center {
+    align-items: center;
+  }
+
+  .tablet\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .tablet\:pb-\[100px\] {
+    padding-bottom: 100px;
+  }
 }

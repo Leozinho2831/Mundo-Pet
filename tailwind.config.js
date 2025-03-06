@@ -25,7 +25,8 @@ module.exports = {
           brand: '#9282FA',
           highlights: '#BDB4FA',
           page: '#14151D',
-          logo: '#2E2C30'
+          logo: '#2E2C30',
+          rodape: '#23242c',
         },
 
         border: {

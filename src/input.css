@@ -55,4 +55,8 @@
         cursor: pointer;
         background: url("image/Arrow.svg") no-repeat;
     }
+
+    .novoAgendamento {
+        box-shadow: 0 0 20px 0 #9282FA;
+    }
 }
