@@ -725,44 +725,40 @@ input {
   display: grid;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[190px\] {
-  width: 190px;
-}
-
-.w-full {
-  width: 100%;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-\[200px\] {
   width: 200px;
 }
 
-.w-\[218px\] {
-  width: 218px;
+.w-\[95\%\] {
+  width: 95%;
 }
 
-.min-w-32 {
-  min-width: 8rem;
+.w-full {
+  width: 100%;
 }
 
-.min-w-\[190px\] {
-  min-width: 190px;
+.w-\[97\%\] {
+  width: 97%;
 }
 
 .min-w-\[200px\] {
   min-width: 200px;
 }
 
-.max-w-\[480px\] {
-  max-width: 480px;
+.max-w-\[540px\] {
+  max-width: 540px;
 }
 
 .flex-1 {
@@ -799,8 +795,8 @@ input {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.items-center {
+  align-items: center;
 }
 
 .justify-between {
@@ -893,21 +889,16 @@ input {
   background-color: transparent;
 }
 
-.bg-content-brand {
-  --tw-bg-opacity: 1;
-  background-color: rgb(146 130 250 / var(--tw-bg-opacity, 1));
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-5 {
@@ -951,6 +942,15 @@ input {
   text-align: center;
 }
 
+.font-sans {
+  font-family: Inter, sans-serif;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-content-paragraph {
   --tw-text-opacity: 1;
   color: rgb(152 149 157 / var(--tw-text-opacity, 1));
@@ -971,11 +971,6 @@ input {
   color: rgb(102 102 102 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#050505\] {
-  --tw-text-opacity: 1;
-  color: rgb(5 5 5 / var(--tw-text-opacity, 1));
-}
-
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -984,6 +979,16 @@ input {
 .blur-sm {
   --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 480px) {
+  .mobile\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile\:p-10 {
+    padding: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {

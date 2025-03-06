@@ -23,7 +23,7 @@
             </div>
             <div class="flex gap-3 p-3 min-w-[200px] w-[200px] border border-border-primary rounded-lg tablet:h-[48px]">
                 <img src="src/image/Calendar.svg">
-                <input type="date" required class="cursor-text bg-transparent text-content-secondary">
+                <input type="date" required class="cursor-text bg-transparent text-content-secondary font-sans text-base">
             </div>
         </section>
 
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <form action="#" id="form" novalidate class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[480px] grid gap-7 bg-background-tertiary p-10 rounded-xl">
+        <form action="#" id="form" novalidate class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[97%] max-w-[540px] p-7 grid gap-7 bg-background-tertiary mobile:p-10 rounded-xl">
 
             <header>
                 <h1 class="title text-content-primary">Agende um atendimento</h1>
@@ -158,14 +158,14 @@
                     <textarea rows="4" name="description" id="description" placeholder="Banho e tosa" class="input resize-none"></textarea>
                 </div>
 
-                <div class="flex flex-wrap gap-4">
-                    <div class="min-w-32 flex gap-3 p-3 w-full border border-border-primary rounded-lg">
-                        <img src="src/image/Calendar.svg"> 
-                        <input type="date" name="date" id="date" required class="flex-1 w-1/2 cursor-text bg-transparent text-content-secondary">
+                <div class="grid gap-4 mobile:grid-cols-2">
+                    <div class="flex items-center gap-3 p-3 w-full border border-border-primary rounded-lg">
+                        <img class="w-5 h-5" src="src/image/Calendar.svg"> 
+                        <input type="date" name="date" id="date" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base">
                     </div>
-                    <div class="min-w-32 flex flex-wrap gap-3 p-3 w-full border border-border-primary rounded-lg">
-                        <img src="src/image/Clock.svg">
-                        <input type="time" name="hour" id="hour" required class="flex-1 w-1/2 cursor-text bg-transparent text-content-secondary">
+                    <div class="flex items-center gap-3 p-3 w-full border border-border-primary rounded-lg">
+                        <img class="w-5 h-5" src="src/image/Clock.svg">
+                        <input type="time" name="hour" id="hour" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base">
                     </div>
                 </div>
             </section>
