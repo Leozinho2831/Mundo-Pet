@@ -20,7 +20,7 @@
             </div>
             <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
                 <img src="src/image/Calendar.svg">
-                <input type="date" class="bg-transparent text-content-secondary" required>
+                <input type="date" required class="cursor-text bg-transparent text-content-secondary">
             </div>
         </section>
 
@@ -31,32 +31,32 @@
             </header>
             <div>
                 <label for="nameUser">Nome do tutor</label>
-                <input type="text" id="nameUser" placeholder="Helena Souza">
+                <input type="text" id="nameUser" placeholder="Helena Souza" class="input">
                 <img src="src/image/User.svg" alt="User">
             </div>
             <div>
                 <label for="namePet">Nome do pet</label>
-                <input type="text" id="namePet" placeholder="Cheddar">
+                <input type="text" id="namePet" placeholder="Cheddar" class="input">
                 <img src="src/image/Pet.svg" alt="Pata">
             </div>
             <div>
                 <label for="phone">Telefone</label>
-                <input type="tel" id="phone" placeholder="(00) 0 0000-0000">
+                <input type="tel" id="phone" placeholder="(00) 0 0000-0000" class="input">
                 <img src="src/image/Phone.svg" alt="Telefone">
             </div>
             <div>
                 <label for="description">Descrição do serviço</label>
-                <textarea rows="4" name="description" id="description" placeholder="Banho e tosa"></textarea>
+                <textarea rows="4" name="description" id="description" placeholder="Banho e tosa" class="input resize-none"></textarea>
             </div>
             <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
-                <img src="src/image/Calendar.svg">
-                <input type="date" name="date" id="date" class="bg-transparent text-content-secondary" required>
+                <img src="src/image/Calendar.svg"> 
+                <input type="date" name="date" id="date" required class="cursor-text bg-transparent text-content-secondary">
             </div>
             <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
                 <img src="src/image/Clock.svg">
-                <input type="time" name="hour" id="hour" class="flex-1 bg-transparent text-content-secondary" required>
+                <input type="time" name="hour" id="hour" required class="flex-1 cursor-text bg-transparent text-content-secondary">
             </div>
-            <button>Agendar</button>
+            <button class="button">Agendar</button>
         </form>
     </main>
 
