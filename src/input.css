@@ -37,7 +37,7 @@
 
     .button{
         @apply font-sans font-bold text-[1rem] leading-6 uppercase 
-        bg-content-brand rounded-lg px-5 py-3
+        bg-content-brand text-content-black rounded-lg px-5 py-3
         hover:bg-background-highlights
         transition;
     }
@@ -57,6 +57,6 @@
     }
 
     .novoAgendamento {
-        box-shadow: 0 0 20px 0 #9282FA;
+        box-shadow: 0 0 20px 0 theme(colors.background.brand);
     }
 }
