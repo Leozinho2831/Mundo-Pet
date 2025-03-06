@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/styles.css">
     <title>Mundo Pet</title>
 </head>
-<body>
+<body class="relative min-w-screen w-full bg-background-page">
+    <header class="absolute top-0 left-0 bg-background-logo py-3 px-5 rounded-ee-xl">
+        <img src="src/image/Logo.svg" alt="Logo da Mundo Pet">
+    </header>
+
+    <main class="py-[69px] px-5">
+        <section class="flex flex-col gap-3">
+            <div>
+                <h1 class="title text-content-primary">Sua agenda</h1>
+                <p class="pMedium text-content-paragraph">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+            </div>
+            <div class="flex gap-3 p-3 w-[190px] border border-border-primary rounded-lg">
+                <img src="src/image/Calendar.svg">
+                <input type="date" class="bg-transparent text-content-secondary" required>
+            </div>
+        </section>
+    </main>
     
     <script src="src/script.js"></script>
 </body>

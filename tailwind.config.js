@@ -15,6 +15,7 @@ module.exports = {
           secondary: '#98959D',
           tertiary: '#666666',
           brand: '#9282FA',
+          paragraph: '#98959D',
         },
 
         background: {
