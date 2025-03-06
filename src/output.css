@@ -741,12 +741,24 @@ input {
   width: 100%;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[218px\] {
+  width: 218px;
+}
+
 .min-w-32 {
   min-width: 8rem;
 }
 
 .min-w-\[190px\] {
   min-width: 190px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .max-w-\[480px\] {
@@ -881,6 +893,11 @@ input {
   background-color: transparent;
 }
 
+.bg-content-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 130 250 / var(--tw-bg-opacity, 1));
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -954,6 +971,11 @@ input {
   color: rgb(102 102 102 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#050505\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 5 5 / var(--tw-text-opacity, 1));
+}
+
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -999,6 +1021,11 @@ input {
 
   .tablet\:bg-transparent {
     background-color: transparent;
+  }
+
+  .tablet\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .tablet\:pb-\[100px\] {
