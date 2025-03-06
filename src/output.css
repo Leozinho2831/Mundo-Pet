@@ -566,10 +566,31 @@ input {
   font-weight: 700;
 }
 
+.pSmall {
+  font-family: Inter, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
 .pMedium {
   font-family: Inter, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.lMedium {
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.lLarge {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
   line-height: 1.5rem;
 }
 
@@ -732,12 +753,30 @@ input {
   flex-direction: column;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-ee-xl {
@@ -751,6 +790,11 @@ input {
 .border-border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(62 60 65 / var(--tw-border-opacity, 1));
+}
+
+.border-background-logo {
+  --tw-border-opacity: 1;
+  border-color: rgb(46 44 48 / var(--tw-border-opacity, 1));
 }
 
 .bg-background-logo {
@@ -767,8 +811,17 @@ input {
   background-color: transparent;
 }
 
+.bg-background-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 36 44 / var(--tw-bg-opacity, 1));
+}
+
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-5 {
@@ -786,6 +839,19 @@ input {
   padding-bottom: 69px;
 }
 
+.py-\[32px\] {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pb-\[32px\] {
+  padding-bottom: 32px;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-content-paragraph {
   --tw-text-opacity: 1;
   color: rgb(152 149 157 / var(--tw-text-opacity, 1));
@@ -799,4 +865,9 @@ input {
 .text-content-secondary {
   --tw-text-opacity: 1;
   color: rgb(152 149 157 / var(--tw-text-opacity, 1));
+}
+
+.text-content-tertiary {
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity, 1));
 }
