@@ -723,8 +723,20 @@ input {
   width: 100%;
 }
 
+.w-\[2000px\] {
+  width: 2000px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
 .min-w-\[190px\] {
   min-width: 190px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .max-w-\[480px\] {
