@@ -36,7 +36,19 @@
     }
 
     .button{
-        @apply font-sans font-normal text-[1rem] leading-6;
+        @apply font-sans font-bold text-[1rem] leading-6 uppercase 
+        bg-content-brand rounded-lg px-5 py-3
+        hover:bg-background-highlights
+        transition;
+    }
+
+    .input{
+        @apply bg-transparent border border-border-primary text-content-primary rounded-lg p-3 w-full
+        hover:border-border-secondary 
+        focus:border-border-secondary 
+        active:border-border-brand active:text-content-primary 
+        placeholder:text-content-secondary
+        transition;
     }
 
     ::-webkit-calendar-picker-indicator {

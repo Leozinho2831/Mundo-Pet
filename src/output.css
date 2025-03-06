@@ -602,10 +602,72 @@ input {
 }
 
 .button {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 130 250 / var(--tw-bg-opacity, 1));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-family: Inter, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.5rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(189 180 250 / var(--tw-bg-opacity, 1));
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(62 60 65 / var(--tw-border-opacity, 1));
+  background-color: transparent;
+  padding: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(152 149 157 / var(--tw-text-opacity, 1));
+}
+
+.input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(152 149 157 / var(--tw-text-opacity, 1));
+}
+
+.input:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(134 129 140 / var(--tw-border-opacity, 1));
+}
+
+.input:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(134 129 140 / var(--tw-border-opacity, 1));
+}
+
+.input:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(146 130 250 / var(--tw-border-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -689,6 +751,14 @@ input {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .flex-col {
@@ -809,45 +879,12 @@ input {
   padding-bottom: 69px;
 }
 
-.py-\[40px\] {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.py-\[9px\] {
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-
-.py-\[80px\] {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .pb-\[32px\] {
   padding-bottom: 32px;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-\[80px\] {
-  padding-top: 80px;
-}
-
-.pt-\[69px\] {
-  padding-top: 69px;
 }
 
 .text-center {
@@ -884,28 +921,16 @@ input {
     position: absolute;
   }
 
-  .tablet\:top-0 {
-    top: 0px;
+  .tablet\:bottom-0 {
+    bottom: 0px;
   }
 
   .tablet\:right-0 {
     right: 0px;
   }
 
-  .tablet\:bottom-0 {
-    bottom: 0px;
-  }
-
   .tablet\:h-\[48px\] {
     height: 48px;
-  }
-
-  .tablet\:w-1\/2 {
-    width: 50%;
-  }
-
-  .tablet\:w-3\/4 {
-    width: 75%;
   }
 
   .tablet\:w-4\/6 {
