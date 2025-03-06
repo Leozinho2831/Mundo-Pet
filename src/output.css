@@ -575,6 +575,11 @@ video {
   line-height: 1.5rem;
 }
 
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url("image/Arrow.svg") no-repeat;
+}
+
 .absolute {
   position: absolute;
 }
@@ -595,28 +600,12 @@ video {
   display: flex;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[183\] {
-  width: 183;
-}
-
-.w-\[183px\] {
-  width: 183px;
-}
-
 .w-\[190px\] {
   width: 190px;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -677,14 +666,14 @@ video {
   padding-bottom: 69px;
 }
 
-.text-content-primary {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-content-paragraph {
   --tw-text-opacity: 1;
   color: rgb(152 149 157 / var(--tw-text-opacity, 1));
+}
+
+.text-content-primary {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .text-content-secondary {

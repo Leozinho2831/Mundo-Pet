@@ -34,4 +34,9 @@
     .button{
         @apply font-sans font-normal text-[1rem] leading-6;
     }
+
+    ::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        background: url("image/Arrow.svg") no-repeat;
+    }
 }
