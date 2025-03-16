@@ -1,1 +1,0 @@
-dayjs.locale('pt-br');
