@@ -769,6 +769,18 @@ input {
   width: 100%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[calc\(\)\] {
+  width: calc();
+}
+
+.w-\[calc\(100\%-40px\)\] {
+  width: calc(100% - 40px);
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
 }
@@ -843,6 +855,10 @@ input {
   align-self: flex-end;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .justify-self-end {
   justify-self: end;
 }
@@ -865,6 +881,10 @@ input {
 
 .border {
   border-width: 1px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .border-background-logo {
