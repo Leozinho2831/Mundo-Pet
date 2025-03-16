@@ -11,12 +11,14 @@
 </head>
 <body class="relative min-w-screen w-full min-h-screen bg-background-page flex flex-col tablet:items-center">
     <header class="absolute top-0 left-0 bg-background-logo py-3 px-5 rounded-ee-xl">
-        <img src="src/image/Logo.svg" alt="Logo da Mundo Pet">
+        <a href="index.html">
+            <img src="src/image/Logo.svg" alt="Logo da Mundo Pet">
+        </a>
     </header>
 
-    <main class="py-[69px] tablet:pb-[100px] px-5 tablet:w-4/6 tablet:max-w-[800px]">
+    <main class="py-[69px] tablet:pb-[100px] px-5 tablet:w-4/6 tablet:max-w-[800px] js-main">
         <!-- colocar blur-sm nas duas section para ficar com blur quando abrir o formulário -->
-        <section class="flex flex-col gap-3 pb-[32px] tablet:flex-row tablet:items-center">
+        <section class="flex flex-col gap-3 pb-[32px] tablet:flex-row tablet:items-center js-blur">
             <div class="w-full">
                 <h1 class="title text-content-primary">Sua agenda</h1>
                 <p class="pMedium text-content-paragraph">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
@@ -27,108 +29,108 @@
             </div>
         </section>
 
-        <section class="space-y-3">
+        <section class="space-y-3 js-blur">
             <div class="bg-background-tertiary rounded-[10px]">
-                <div class="flex justify-between p-4">
+                <header class="flex justify-between p-4">
                     <div class="flex gap-3">
                         <img src="src/image/Morning.svg">
                         <p class="lLarge text-content-primary">Manhã</p>
                     </div>
 
                     <p class="lLarge text-content-secondary">09h-12h</p>
-                </div>
+                </header>
 
                 <hr class="border-background-logo">
 
-                <div class="flex flex-col px-5 py-[32px]">
-                    <div class="flex gap-3">
+                <div class="flex flex-col gap-4 px-5 py-[32px] desktop:flex-row desktop:items-center desktop:justify-between">
+                    <div class="flex gap-4 flex-1">
                         <p class="lMedium text-content-primary">09:00</p>
                         <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
                     </div>
 
-                    <p class="pMedium text-content-secondary">Vacinação</p>
+                    <p class="pMedium text-content-secondary flex-1">Vacinação</p>
 
-                    <p class="link pt-4 self-end">Remover agendamento</p>
+                    <p class="link pt-4 self-end desktop:pt-0">Remover agendamento</p>
                 </div>
             </div>
 
             <div class="bg-background-tertiary rounded-[10px]">
-                <div class="flex justify-between p-4">
+                <header class="flex justify-between p-4">
                     <div class="flex gap-3">
                         <img src="src/image/Afternoon.svg">
                         <p class="lLarge text-content-primary">Tarde</p>
                     </div>
 
                     <p class="lLarge text-content-secondary">13h-18h</p>
-                </div>
+                </header>
 
                 <hr class="border-background-logo">
 
-                <div class="flex flex-col px-5 py-[32px]">
-                    <div class="flex gap-3">
+                <div class="flex flex-col gap-4 px-5 py-[32px] desktop:flex-row desktop:items-center desktop:justify-between">
+                    <div class="flex gap-4 flex-1">
                         <p class="lMedium text-content-primary">09:00</p>
                         <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
                     </div>
 
-                    <p class="pMedium text-content-secondary">Vacinação</p>
+                    <p class="pMedium text-content-secondary flex-1">Vacinação</p>
 
-                    <p class="link pt-4 self-end">Remover agendamento</p>
+                    <p class="link pt-4 self-end desktop:pt-0">Remover agendamento</p>
                 </div>
 
                 <hr class="border-background-logo">
 
-                <div class="flex flex-col px-5 py-[32px]">
-                    <div class="flex gap-3">
+                <div class="flex flex-col gap-4 px-5 py-[32px] desktop:flex-row desktop:items-center desktop:justify-between">
+                    <div class="flex gap-4 flex-1">
                         <p class="lMedium text-content-primary">09:00</p>
                         <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
                     </div>
 
-                    <p class="pMedium text-content-secondary">Vacinação</p>
+                    <p class="pMedium text-content-secondary flex-1">Vacinação</p>
 
-                    <p class="link pt-4 self-end">Remover agendamento</p>
+                    <p class="link pt-4 self-end desktop:pt-0">Remover agendamento</p>
                 </div>
 
                 <hr class="border-background-logo">
 
-                <div class="flex flex-col px-5 py-[32px]">
-                    <div class="flex gap-3">
+                <div class="flex flex-col gap-4 px-5 py-[32px] desktop:flex-row desktop:items-center desktop:justify-between">
+                    <div class="flex gap-4 flex-1">
                         <p class="lMedium text-content-primary">09:00</p>
                         <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
                     </div>
 
-                    <p class="pMedium text-content-secondary">Vacinação</p>
+                    <p class="pMedium text-content-secondary flex-1">Vacinação</p>
 
-                    <p class="link pt-4 self-end">Remover agendamento</p>
+                    <p class="link pt-4 self-end desktop:pt-0">Remover agendamento</p>
                 </div>
             </div>
 
             <div class="bg-background-tertiary rounded-[10px]">
-                <div class="flex justify-between p-4">
+                <header class="flex justify-between p-4">
                     <div class="flex gap-3">
                         <img src="src/image/Night.svg">
                         <p class="lLarge text-content-primary">Noite</p>
                     </div>
 
                     <p class="lLarge text-content-secondary">19h-21h</p>
-                </div>
+                </header>
 
                 <hr class="border-background-logo">
 
-                <div class="flex flex-col px-5 py-[32px]">
-                    <div class="flex gap-3">
+                <div class="flex flex-col gap-4 px-5 py-[32px] desktop:flex-row desktop:items-center desktop:justify-between">
+                    <div class="flex gap-4 flex-1">
                         <p class="lMedium text-content-primary">09:00</p>
                         <p class="lMedium text-content-primary">Thor <span class="text-content-secondary">/ Fernanda Costa</span></p>
                     </div>
 
-                    <p class="pMedium text-content-secondary">Vacinação</p>
+                    <p class="pMedium text-content-secondary flex-1">Vacinação</p>
 
-                    <p class="link pt-4 self-end">Remover agendamento</p>
+                    <p class="link pt-4 self-end desktop:pt-0">Remover agendamento</p>
                 </div>
             </div>
         </section>
 
         <!-- quando for ativar ele, remover hidden e adicionar grid -->
-        <form action="#" id="form" novalidate class="hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[97%] max-w-[540px] p-7 gap-7 bg-background-tertiary mobile:p-10 rounded-xl">
+        <form action="#" id="form" novalidate class="hidden absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[97%] max-w-[540px] p-7 gap-7 bg-background-tertiary mobile:p-10 rounded-xl js-form">
 
             <header>
                 <h1 class="title text-content-primary">Agende um atendimento</h1>
@@ -176,11 +178,11 @@
     </main>
 
     <footer class="justify-self-end py-5 tablet:px-5 bg-background-rodape text-center tablet:bg-transparent tablet:absolute tablet:bottom-0 tablet:right-0">
-        <button class="button novoAgendamento">NOVO AGENDAMENTO</button>
+        <button class="button novoAgendamento js-buttonForm">NOVO AGENDAMENTO</button>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
-    <script src="src/script.js"></script>
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>

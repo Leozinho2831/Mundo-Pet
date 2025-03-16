@@ -721,8 +721,16 @@ input {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -1034,5 +1042,27 @@ input {
 
   .tablet\:pb-\[100px\] {
     padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
+
+  .desktop\:items-center {
+    align-items: center;
+  }
+
+  .desktop\:justify-between {
+    justify-content: space-between;
+  }
+
+  .desktop\:p-0 {
+    padding: 0px;
+  }
+
+  .desktop\:pt-0 {
+    padding-top: 0px;
   }
 }
