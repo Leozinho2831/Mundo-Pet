@@ -1,5 +1,3 @@
-dayjs.locale('pt-br');
-
 const buttonForm = document.querySelector('.js-buttonForm');
 const form = document.querySelector('.js-form');
 const main = document.querySelector('.js-main');
