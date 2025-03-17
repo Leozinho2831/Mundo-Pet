@@ -7,7 +7,7 @@ const inputDateForm = document.querySelector('.js-formInputDate');
 inputDate.min = today.format('YYYY-MM-DD');
 inputDateForm.min = today.format('YYYY-MM-DD');
 
-function schedule(){
+function scheduleHeader(){
     const inputValue = dayjs(inputDate.value);
         
     if(inputValue > today){
@@ -24,7 +24,7 @@ function schedule(){
 }
 
 inputDate.addEventListener('keydown', (event) => {
-    if(event.key === 'Enter') schedule();
+    if(event.key === 'Enter') scheduleHeader();
 });
 
 const phone = document.querySelector('.js-inputPhone');
