@@ -58,10 +58,6 @@
         @apply border-red-700;
     }
 
-    .textError{
-        @apply hidden !mt-1 pSmall text-red-600;
-    }
-
     ::-webkit-calendar-picker-indicator {
         cursor: pointer;
         background: url("image/Arrow.svg") no-repeat;
