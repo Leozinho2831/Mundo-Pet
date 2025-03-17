@@ -14,8 +14,8 @@ export function openForm(form, sections){
     });
 }
 
-buttonForm.onclick  = () => {
-    openForm();
+buttonForm.onclick = () => {
+    openForm(form, sections);
 }
 
 main.onclick = (event) => {
