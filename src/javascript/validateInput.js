@@ -5,23 +5,25 @@ const inputDate = document.querySelector('.js-dateSchedule');
 
 inputDate.min = today.format('YYYY-MM-DD');
 
-inputDate.addEventListener('keydown', (event) => {
-    if(event.key === 'Enter'){
-        const inputValue = dayjs(inputDate.value);
+function schedule(){
+    const inputValue = dayjs(inputDate.value);
         
-        if(inputValue > today){
-            const form = document.querySelector('.js-form');
-            const sections = document.querySelectorAll('.js-blur');
-            const inputDateForm = document.querySelector('.js-formInputDate');
+    if(inputValue > today){
+        const form = document.querySelector('.js-form');
+        const sections = document.querySelectorAll('.js-blur');
+        const inputDateForm = document.querySelector('.js-formInputDate');
 
-            inputDateForm.value = inputValue.format('YYYY-MM-DD');
-            openForm(form, sections);
-        } else {
-            // criar uma notificação
-            alert('Digite uma data maior que a data de agora!')
-            inputDate.value = '';
-        }
+        inputDateForm.value = inputValue.format('YYYY-MM-DD');
+        openForm(form, sections);
+    } else {
+        // criar uma notificação
+        alert('Digite uma data maior que a data de agora!')
+        inputDate.value = '';
     }
+}
+
+inputDate.addEventListener('keydown', (event) => {
+    if(event.key === 'Enter') schedule();
 });
 
 const phone = document.querySelector('.js-inputPhone');
