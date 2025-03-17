@@ -4,13 +4,18 @@ const main = document.querySelector('.js-main');
 
 const sections = document.querySelectorAll('.js-blur');
 
-buttonForm.onclick  = () => {
+// os parâmetros são os elementos usados na function
+export function openForm(form, sections){
     form.classList.remove('hidden');
     form.classList.add('grid');
         
     sections.forEach((section) => {
         section.classList.add('blur-sm');
     });
+}
+
+buttonForm.onclick  = () => {
+    openForm();
 }
 
 main.onclick = (event) => {
