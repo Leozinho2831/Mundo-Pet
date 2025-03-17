@@ -680,6 +680,22 @@ input {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.inputError {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+}
+
+.textError {
+  font-family: Inter, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  margin-top: 0.25rem !important;
+  display: none;
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
   background: url("image/Arrow.svg") no-repeat;
@@ -717,8 +733,36 @@ input {
   top: 50%;
 }
 
+.top-\[calc\(\)\] {
+  top: calc();
+}
+
+.top-\[calc\(50\%\)\] {
+  top: calc(50%);
+}
+
+.top-\[calc\(50\%\+\)\] {
+  top: calc(50% + );
+}
+
+.top-\[calc\(50\%\+2px\)\] {
+  top: calc(50% + 2px);
+}
+
+.top-\[calc\(50\%\+3px\)\] {
+  top: calc(50% + 3px);
+}
+
+.top-\[calc\(50\%\+4px\)\] {
+  top: calc(50% + 4px);
+}
+
 .z-20 {
   z-index: 20;
+}
+
+.\!mt-0 {
+  margin-top: 0px !important;
 }
 
 .mb-1 {
