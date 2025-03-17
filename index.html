@@ -152,7 +152,7 @@
 
                 <div class="relative">
                     <label for="phone" class="lMedium text-content-primary mb-1">Telefone</label>
-                    <input type="tel" id="phone" placeholder="(00) 0 0000-0000" class="input pl-10">
+                    <input type="tel" id="phone" placeholder="(00) 0 0000-0000" class="input pl-10 js-inputPhone">
                     <img class="absolute top-1/2 left-3" src="src/image/Phone.svg" alt="Telefone">
                 </div>
 
@@ -168,7 +168,7 @@
                     </div>
                     <div class="flex items-center gap-3 p-3 w-full border border-border-primary rounded-lg">
                         <img class="w-5 h-5" src="src/image/Clock.svg">
-                        <input type="time" name="hour" id="hour" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base">
+                        <input type="time" name="hour" id="hour" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base js-inputHour">
                     </div>
                 </div>
             </section>
@@ -184,6 +184,6 @@
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
     <script src="src/javascript/openForm.js"></script>
-    <script src="src/javascript/validateDate.js"></script>
+    <script src="src/javascript/validateInput.js"></script>
 </body>
 </html>
