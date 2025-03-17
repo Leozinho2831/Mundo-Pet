@@ -164,7 +164,7 @@
                 <div class="grid gap-4 mobile:grid-cols-2">
                     <div class="flex items-center gap-3 p-3 w-full border border-border-primary rounded-lg">
                         <img class="w-5 h-5" src="src/image/Calendar.svg"> 
-                        <input type="date" name="date" id="date" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base">
+                        <input type="date" name="date" id="date" required class="flex-1 cursor-text bg-transparent text-content-secondary font-sans text-base js-formInputDate">
                     </div>
                     <div class="flex items-center gap-3 p-3 w-full border border-border-primary rounded-lg">
                         <img class="w-5 h-5" src="src/image/Clock.svg">
@@ -183,8 +183,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
-    <script src="src/javascript/openForm.js"></script>
-    <script src="src/javascript/validateInput.js"></script>
-    <script src="src/javascript/schdule.js"></script>
+    <script type="module" src="src/javascript/openForm.js"></script>
+    <script type="module" src="src/javascript/validateInput.js"></script>
+    <script type="module" src="src/javascript/schdule.js"></script>
 </body>
 </html>
