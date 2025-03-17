@@ -2,8 +2,10 @@ import { openForm } from "./openForm.js";
 
 const today = dayjs();
 const inputDate = document.querySelector('.js-dateSchedule');
+const inputDateForm = document.querySelector('.js-formInputDate');
 
 inputDate.min = today.format('YYYY-MM-DD');
+inputDateForm.min = today.format('YYYY-MM-DD');
 
 function schedule(){
     const inputValue = dayjs(inputDate.value);
@@ -11,7 +13,6 @@ function schedule(){
     if(inputValue > today){
         const form = document.querySelector('.js-form');
         const sections = document.querySelectorAll('.js-blur');
-        const inputDateForm = document.querySelector('.js-formInputDate');
 
         inputDateForm.value = inputValue.format('YYYY-MM-DD');
         openForm(form, sections);
@@ -36,17 +37,30 @@ const verifyPhone = () => {
 
     if(valueArray.length === 11){
         phone.value = `(${valueArray.slice(0, 2).join('')}) ${valueArray.slice(2, 7).join('')}-${valueArray.slice(7, 11).join('')}`;
-    }
 
-    const phoneRegex = /^\(\d{2}\)\s?\d{5}-\d{4}$/;
+        const phoneRegex = /^\(\d{2}\)\s?\d{5}-\d{4}$/;
 
-    if(phoneRegex.test(phone.value)){
-        // executar uma função de enviar dados
-    } else {
-        alert('Seu número de telefone está escrito de forma incorreta!');
+        if(phoneRegex.test(phone.value)){
+            // executar uma função de enviar dados
+        } else {
+            alert('Seu número de telefone está escrito de forma incorreta!');
+        }
     }
 }
 
 phone.oninput = () => {
     verifyPhone();
+}
+
+const inputHour = document.querySelector('.js-inputHour');
+
+inputHour.oninput = () => {
+    const [hour, minute] = inputHour.value.split(":").map(Number);
+    const inputTime = dayjs().hour(hour).minute(minute);
+
+    const diffHour = dayjs(inputDateForm.value).diff(inputTime, 'hour');
+    
+    if(diffHour > 0){
+        // ...
+    }
 }
